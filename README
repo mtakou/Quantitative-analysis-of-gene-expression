@@ -1,0 +1,29 @@
+Quantitative analysis of gene expression variance.
+
+A set of scripts used to partition gene count variance to additive and non-additive variance.
+
+Summary of the included scripts:
+
+allele_frequencies.R
+Script to estimate the difference of the estimated allele frequencies between original and hybrid populations. Requires vcf files of SNPs within genes in the original populations only.
+
+cluster_MCMCv2.R
+Script to partition the gene count variance to additive, non-additive variance. The analysis is performed iteratively via a linux terminal.
+
+cluster_MCMCvPerm.R
+Script to permute the gene identity and then partition the gene count variance to additive, non-additive variance. The analysis is performed iteratively via a linux terminal.
+
+fpkm_counts.R
+Estimate the FPKM per gene and then summarize for the individuals.
+
+geneGWAS_plots.R
+GWAS for the counts of each gene based on EMMA. The analysis is performed iteratively.
+
+GeneOntology.R
+Gene Ontology Enrichment analysis for additive and non-additive variance, including permutation of gene identity for estimating a p value threshold.
+
+genetic_distance.py
+Script for estimating the genetic distance between lines. It is based on vcf files.
+
+summarize_animal_model_results.r
+Summary and filtering of the files produced by cluster_MCMCv2.r and cluster_MCMCvPerm.R.
